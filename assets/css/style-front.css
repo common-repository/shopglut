@@ -1,0 +1,464 @@
+/* Tab titles (navigation) styling */
+.shoglut-wishlist-tabs .tab-titles {
+  display: flex;
+  justify-content: start;
+  list-style-type: none;
+  padding: 0px;
+  margin: 0px;
+  margin-bottom: -1px;
+}
+
+.shoglut-wishlist-tabs .tab-titles .tab-title {
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border: 1px solid #d3d3d3;
+  border-bottom: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.shoglut-wishlist-tabs .tab-titles .tab-title:not(.active) {
+  border-bottom: 1px solid #ddd;
+}
+
+.shoglut-wishlist-tabs .tab-titles .tab-title.active {
+  font-weight: bold;
+  border-bottom: none;
+}
+
+/* Tab content styling */
+
+.shoglut-wishlist-tabs .tab-content.active {
+  display: block;
+}
+
+/* Tab content styling */
+.shoglut-wishlist-tabs .tab-content {
+  display: none;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  min-height: 300px;
+}
+
+.shoglut-wishlist-tabs .tab-content.active {
+  display: block;
+}
+
+/* Tab content styling */
+
+.shoglut-wishlist-tabs .tab-content.active {
+  display: block;
+}
+
+/* Wishlist table styling */
+.shoglut-wishlist-tabs .shopglut-wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.shopglut-wishlist-table input.quantity {
+  padding-right: 5px;
+  padding-left: 17px;
+  width: 64px;
+}
+
+.shoglut-wishlist-tabs .shopglut-wishlist-table th {
+  font-weight: bold;
+}
+
+/* Checkbox and button styling */
+.shoglut-wishlist-tabs .shopglut-wishlist-table input[type="checkbox"] {
+  cursor: pointer;
+}
+
+.shoglut-wishlist-tabs .shopglut-wishlist-table .add-to-cart-btn,
+.shoglut-wishlist-tabs .shopglut-wishlist-table .remove-btn,
+.shoglut-wishlist-tabs .shopglut-wishlist-table .remove-btn-account {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.shoglut-wishlist-tabs .shopglut-wishlist-table .add-to-cart-btn {
+  transition: background-color 0.3s;
+}
+
+.shoglut-wishlist-tabs .shopglut-wishlist-table .remove-btn,
+.shoglut-wishlist-tabs .shopglut-wishlist-table .remove-btn-account {
+  background-color: #e74c3c;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+.shoglut-wishlist-tabs .shopglut-wishlist-table .remove-btn:hover,
+.shoglut-wishlist-tabs .shopglut-wishlist-table .remove-btn-account:hover {
+  background-color: #c0392b;
+}
+
+/* Normal wishlist container styling */
+#shopglut-normal-wishlist {
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  border-radius: 4px;
+  min-width: 1140px;
+  min-height: 300px;
+  margin-top: 10px;
+}
+
+/* Wishlist table styling */
+#shopglut-normal-wishlist .shopglut-wishlist-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table th,
+#shopglut-normal-wishlist .shopglut-wishlist-table td,
+.shoglut-wishlist-tabs .shopglut-wishlist-table th,
+.shoglut-wishlist-tabs .shopglut-wishlist-table td {
+  padding: 12px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table th,
+.shoglut-wishlist-tabs .shopglut-wishlist-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+  color: #0b003a;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table tr:nth-child(even) {
+  background-color: #fafafa;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table tr:hover {
+  background-color: #f1f1f1;
+}
+
+/* Checkbox and button styling */
+#shopglut-normal-wishlist .shopglut-wishlist-table input[type="checkbox"] {
+  cursor: pointer;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table .add-to-cart-btn,
+#shopglut-normal-wishlist .shopglut-wishlist-table .remove-btn {
+  padding: 6px 12px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table .add-to-cart-btn,
+.shoglut-wishlist-tabs .shopglut-wishlist-table .add-to-cart-btn {
+  background-color: #0073aa;
+  color: #fff;
+  transition: background-color 0.3s;
+  font-weight: 400;
+  width: 113px;
+  padding: 12px 0px;
+  border-radius: 4px;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table .remove-btn {
+  background-color: #e74c3c;
+  color: #fff;
+  transition: background-color 0.3s;
+}
+
+#shopglut-normal-wishlist .shopglut-wishlist-table .remove-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Modal Container */
+
+#shopgMovetoListModal {
+  position: fixed;
+  display: none;
+  padding: 25px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+#shopgMovetoListContainer {
+  position: relative;
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInModal 0.3s;
+}
+
+/* Close Button */
+#shopgMovetoListModal button[onclick] {
+  background: transparent;
+  border: none;
+  color: #333;
+  font-size: 22px;
+  position: absolute;
+  top: -20px;
+  right: -23px;
+  cursor: pointer;
+  transition: color 0.3s;
+  box-shadow: none;
+}
+
+#shopgMovetoListModal button[onclick]:hover {
+  color: #8d2ce1;
+}
+
+/* Header */
+#shopgMovetoListModal h3 {
+  font-size: 1.75rem;
+  color: #0b003a;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Input and Button Row */
+#shopgMovetoListModal label {
+  font-weight: bold;
+  color: #300a61;
+  font-size: 1rem;
+}
+
+#shopgMovetoListModal input[type="text"] {
+  flex: 1;
+  margin-right: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+#shopgMovetoListModal button#createListBtn {
+  background-color: #0fa37f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#shopgMovetoListModal button#createListBtn:hover {
+  background-color: #4e39ff;
+}
+
+/* Centered Add to List Button */
+#shopgMovetoListModal #addToListContainer {
+  text-align: center;
+}
+
+#shopgMovetoListModal button#addToListBtn {
+  background-color: #0fa37f;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 14px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 20px;
+}
+
+#shopgMovetoListModal button#addToListBtn:hover {
+  background-color: #4e39ff;
+}
+
+/* Checkbox List Container */
+#shopgMovetoListModal #checkboxList {
+  margin-left: 8px;
+}
+
+/* Checkbox List Styling */
+#shopgMovetoListModal #checkboxList label {
+  display: flex;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 1.05rem;
+  color: #0b003a;
+}
+
+#shopgMovetoListModal #checkboxList input[type="checkbox"] {
+  margin-right: 8px;
+}
+
+/* Delete Icon */
+#shopgMovetoListModal #checkboxList .delete-list {
+  cursor: pointer;
+  background-color: #fff;
+  color: #ff0000;
+  border: 1px solid #ff0000;
+  border-radius: 50%;
+  padding: 1px 5px;
+  margin-left: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+#shopgMovetoListModal #checkboxList .delete-list:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Go to Wishlist Button */
+#shopgMovetoListModal #goToWishlistBtn {
+  display: block;
+  width: 100%;
+  margin-top: 25px;
+  padding: 12px;
+  background-color: #046fcb;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#shopgMovetoListModalOverlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+}
+
+/* Modal backdrop */
+#shopglutw-subscribe-notification-modal {
+  display: none; /* Hidden by default */
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+}
+
+#shopglutw-subscribe-notification-modal h3 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+/* Modal content box */
+#shopglutw-subscribe-notification-modal .modal-content {
+  position: relative;
+  background-color: #fff;
+  margin: 10% auto;
+  padding: 20px;
+  border-radius: 8px;
+  width: 80%;
+  max-width: 400px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  animation: fadeInModal 0.3s;
+}
+
+/* Close button styling */
+#shopglutw-subscribe-notification-modal .close-modal {
+  position: absolute;
+  top: 5px;
+  right: 10px;
+  color: #aaa;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#shopglutw-subscribe-notification-modal button {
+  text-align: center;
+  width: 100%;
+  margin-top: 15px;
+}
+
+#shopglutw-subscribe-notification-modal .close-modal:hover,
+#shopglutw-subscribe-notification-modal .close-modal:focus {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Fade-in animation */
+@keyframes fadeInModal {
+  from {
+    opacity: 0;
+    transform: scale(0.9);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.shopglutw-subscribe-notification-btn {
+  float: right;
+  color: #ffffff; /* Button text color */
+  border: none;
+  padding: 10px 20px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 15px;
+  transition: background-color 0.3s ease;
+}
+
+#shopglut-wishlist-notification {
+  display: none;
+  float: right;
+}
+
+#shopglut-wishlist-notification .success-added {
+  margin-right: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #159b45eb;
+  width: 100%;
+  padding: 15px 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+#shopglut-wishlist-notification .wishlist-removed {
+  margin-right: 8px;
+  font-size: 15px;
+  border-radius: 5px;
+  background-color: #d11010d1;
+  width: 100%;
+  padding: 15px 20px;
+  color: #ffffff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.4s ease-in-out;
+}
+#shopglut-wishlist-notification .success-added i {
+  margin-right: 8px;
+  font-size: 20px;
+}
+
+#shopglut-wishlist-notification .success-added span {
+  font-size: 16px;
+  font-weight: 500;
+}
